@@ -1,0 +1,116 @@
+.homeBody{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    height: fit-content;
+    width: 100vw;
+    background-color: rgb(124, 208, 217);
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    height: 400px;
+    margin: 15px;
+    width: 95vw;
+ 
+}
+.container h1{
+    color: rgb(1, 6, 76);
+    width: 100%;
+}
+.inner-div {
+    display: grid;
+    height: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+ 
+}
+.brown-bg{
+    margin: 15px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: rgb(146, 111, 54);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    
+}
+.a{
+    text-decoration: none;
+    width: 100%;
+    height: 85%;
+    margin: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6)
+        
+}
+.pic{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    border-radius: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6)
+}
+.pic h3{
+    margin: 15px;
+    color: white;
+    font-size: 3vw;
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6)
+    
+}
+.one{
+    background: url("./media/one.avif");
+    background-position: center;
+    background-size: cover;
+
+}
+.two{
+    background: url("./media/two.avif");
+    background-position: center;
+    background-size: cover;
+
+}
+.three{
+    background: url("./media/three.avif");
+    background-position: center;
+    background-size: cover;
+
+}
+.four{
+    background: url("./media/four.avif");
+    background-position: center;
+    background-size: cover;
+
+}
+.five{
+    background: url("./media/seven.avif");
+    background-position: center;
+    background-size: cover;
+
+}
+.six{
+    background: url("./media/six.avif");
+    background-position: center;
+    background-size: cover;
+
+}
+.seven{
+    background: url("./media/five.avif");
+    background-position: center;
+    background-size: cover;
+
+}
+.eight{
+    background: url("./media/eight.avif");
+    background-position: center;
+    background-size: cover;
+
+}

@@ -1,0 +1,31 @@
+.navbar-container{
+
+    display: flex;
+    border: 1px solid black;
+    height: 125px;
+    color: white;
+    background-color: rgb(1, 6, 76);
+    flex-wrap: wrap;
+}
+.hello-tag{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 10px;
+    flex: 2;
+}
+.nav-btns{
+    display: flex;
+    align-items:center;
+    justify-content:start;
+    padding-right: 15px;
+    padding-left: 5px;
+    flex: 1;
+  
+}
+.buttonStyle{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+

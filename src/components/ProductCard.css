@@ -1,0 +1,66 @@
+.ProductCard{
+    min-width: 200px;
+    max-width: 200px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    margin: 10px;
+  
+}
+
+.product-pic{
+    height: 65%;
+    width: 100%;
+    margin: 0px;
+
+}
+.prize{
+    height: 15%;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content:start;
+    align-items:center;
+    
+}
+.prize-tag{
+    width: fit-content;
+    padding-left: 5px;
+    color: black;
+    font-size: 1.25em;
+    font-weight: bold;
+    
+}
+
+.product-name{
+    color: black;
+    
+    width: 100%;
+    display: flex;
+    justify-content:end;
+    padding-right: 5px;
+}
+
+.wishList{
+    height: 10%;
+    width: 100%;
+    margin: 0px;
+    border: none;
+}
+.cart{
+    
+    height: 10%;
+    width: 100%;
+    margin: 0px;
+    color: white;
+    background-color: rgb(146, 111, 54);
+    border: none;
+}
+.image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+
+}

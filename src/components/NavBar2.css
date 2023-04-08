@@ -1,0 +1,77 @@
+.nav2-container{
+    position: relative;
+}
+
+.icons-cont {
+    
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(146, 111, 54);
+    color: white;
+}
+.menu-cont{
+    flex: 1;
+    margin-left: 7px;
+    
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.menu{
+    cursor: pointer;
+    color: white;
+    padding: 7px;
+    border-bottom: 2px solid rgb(146, 111, 54);
+}
+
+.menu:hover {
+    color:rgb(146, 111, 54);
+}
+
+.searchbar{
+    flex:3;
+}
+.wishlist{
+    flex: 1;
+    margin-left: 7px;
+    width: fit-content;
+    height: 100%;
+   
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+    
+}
+.cart-icon{
+    flex: 1;
+    margin-left: 7px;
+   
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+   
+}
+
+.sidebar-cont{
+    position: absolute;
+    width: 150px;
+    height: 60vh;
+    border: 1px solid black;
+    background-color: rgb(1, 6, 76,0.75);
+}
+
