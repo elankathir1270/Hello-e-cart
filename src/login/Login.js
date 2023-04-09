@@ -14,9 +14,14 @@ export const Login =()=>{
     return(
         <div className="loginContainer">
 
+            <div className="home-title from-top"><h1>HELLO!</h1></div>
+            <p className="sub-title from-bottom">a e-commerce website</p>
+
             <div className="loginInput">
 
-            <input className="logField" type="text" placeholder="Enter your name" onChange={(state)=>{
+            <input className="logField" type="text"
+             placeholder="Enter your name" 
+             onChange={(state)=>{
                     setuserName(state.target.value)
                 }} />
 

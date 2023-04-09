@@ -1,0 +1,58 @@
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 81vh;
+    width: 100vw;
+    background: rgb(142,101,12);
+    background: linear-gradient(0deg, rgba(142,101,12,1) 0%, rgba(34,193,195,1) 100%);
+}
+.tag-cont-contact{
+   
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    height: 350px;
+    width: 450px;
+    color: white;
+    background-color: rgb(1, 6, 76);
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.70);
+    margin: 20px;
+}
+
+.to-align {
+  
+   height: 80%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 10px;
+}
+
+.h3{
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.scaleUp{
+    animation-name: scaleUp;
+    animation-duration: 1.5s;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes scaleUp {
+    0% {
+       
+        transform: translateY(60px);
+        opacity: 0;
+    }
+    100% {
+        
+        transform: translate(0);
+        opacity: 1;
+    }
+}

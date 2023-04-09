@@ -1,5 +1,6 @@
 import { Navbar } from '../components/Navbar';
 import NavBar2 from "../components/NavBar2";
+import "./contact.css";
 
 export const About= ()=>{
 
@@ -7,7 +8,17 @@ export const About= ()=>{
         <div>
              <div>{<Navbar />}</div>
              <div>{<NavBar2 />}</div>
-              <h3>Avout page</h3>
+             <div className="contact">
+
+            <div className="tag-cont-contact">
+                <div className='to-align'>
+                    <h3 className="h3 scaleUp">Contact: 9688854265</h3>
+                   
+            </div>
+   
+
+</div>
+</div> 
         </div>
        
     );

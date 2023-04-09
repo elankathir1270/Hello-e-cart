@@ -4,6 +4,19 @@ import "./NavBar2.css"
 import MenuIcon from '@mui/icons-material/Menu';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import Searchbar from "./Searchbar";
+
+const searchData = [
+    {name:"men dress", link: "/atformen" },
+    {name:"women dress", link: "/atforwomen"},
+    {name:"men accessories",link: "/acformen"},
+    {name:"women accessories",link: "/acforwomen"},
+    {name:"home appliances",link: "/homeapp"},
+    {name:"kitchen things",link: "/kitchenthings"},
+    {name:"furniture",link: "/furniture"},
+    {name:"decor things",link: "/decorthings"},
+];
+
 
 const NavBar2 = () => {
     
@@ -22,7 +35,9 @@ const NavBar2 = () => {
                 }}>{<MenuIcon />}</div>
             </div>
 
-            <input className="searchbar" />
+            <div className="searchbar-cont">
+                <Searchbar data= {searchData} placeholder= "search" />
+            </div>
 
             <div className="wishlist">
                 <div className="icon" 

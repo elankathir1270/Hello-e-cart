@@ -35,8 +35,13 @@
     color:rgb(146, 111, 54);
 }
 
-.searchbar{
-    flex:3;
+.searchbar-cont{
+    flex:2;
+    
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 .wishlist{
     flex: 1;
