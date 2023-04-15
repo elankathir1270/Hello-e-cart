@@ -1,7 +1,9 @@
 import {React,useEffect, useState} from "react"
 import "./ProductCard.css"
 import { collect } from "../reducers/productReducer";
-import {useDispatch, } from 'react-redux';
+import {useDispatch } from 'react-redux';
+import ProductDetails from "./ProductDetails";
+
 
 const ProductCard =({image,prize,name}) => {
 
@@ -9,16 +11,21 @@ const ProductCard =({image,prize,name}) => {
     const [productPrize, setProductPrize] = useState("");
 
     const dispatch = useDispatch();
+  
 
     useEffect(()=> {
         setProductImg({image})
         setProductPrize({prize})
+
+        return () => {}
     },[])
 
     return(
         <div className="ProductCard">
             <div className="product-pic">
-                <img className="image" src={image} alt="s1" />
+                <img className="image" src={image} alt="s1" 
+            
+                />
                 
             </div>
             <div className="prize">
@@ -27,8 +34,7 @@ const ProductCard =({image,prize,name}) => {
             </div>
             <button className="wishList"
             onClick={()=> {
-                dispatch(collect(productImg))
-                dispatch(collect(productPrize))
+                dispatch(collect({...productImg, ...productPrize}))
             }}
             >
             WISH LIST</button>
@@ -36,4 +42,5 @@ const ProductCard =({image,prize,name}) => {
         </div>
     )
 }
+
 export default ProductCard

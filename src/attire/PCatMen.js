@@ -77,7 +77,7 @@ const PCatMen = () => {
     ]
 
     const menS3 = menTrousers.map((item) => {
-        return <ProductCard 
+        return <ProductCard
         image= {item.image} prize= {item.prize} name= {item.name} />
     }) 
 

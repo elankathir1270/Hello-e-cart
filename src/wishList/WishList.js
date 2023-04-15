@@ -1,24 +1,35 @@
-import {React} from "react";
-import { Navbar } from '../components/Navbar';
+import { React } from "react";
+import { Navbar } from "../components/Navbar";
 import NavBar2 from "../components/NavBar2";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import "./WishList.css";
+import { remove } from "../reducers/productReducer";
+
+
 
 const WishList = () => {
+  const product = useSelector((state) => state.product);
 
-    const productImg = useSelector((state)=> state.product.value)
-    const productPrize = useSelector((state)=> state.product.value)
+  const dispatch = useDispatch();
 
-    return(
-        <div>
+  console.log("product:---- ", product);
 
-            <div>{<Navbar />}</div>
-            <div>{<NavBar2 />}</div>
-
-            <img className="wishImg" src={productImg} alt="srk" />
-            <div>{productPrize}</div>
-            <p>wishlist</p>
-        </div>
-    )
-}
+  return (
+    <div>
+      <div>{<Navbar />}</div>
+      <div>{<NavBar2 />}</div>
+      {product.length ? product.map((item, index) => {
+        return (
+          <div key={index}>
+            <img className="wishImg" src={item.image} alt="srk" />
+            <div>{item.prize}</div>
+            <button>Move to cart</button>
+            <button onClick={() => dispatch(remove(index))}>Remove</button>
+          </div>
+        )
+      }) :
+      (<h3>No items in your wishlist !</h3>)}
+    </div>
+  );
+};
 export default WishList;

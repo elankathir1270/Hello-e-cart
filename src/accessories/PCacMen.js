@@ -1,20 +1,22 @@
-import {React} from "react";
+import {React, useRef} from "react";
 import ProductCard from "../components/ProductCard"
 import "./ProductCarousel.css"
 
 const PCacMen = () => {
+    console.log("PCacMen component invoked")
 
-    let box = document.querySelector(".productContainer");
+    // let box = document.querySelector(".productContainer");
+    const containerRef1 = useRef(null)
 
-    const prevbtnpress = () =>{
-        let width = box.clientWidth;
-        box.scrollLeft = box.scrollLeft - width;
+    const prevbtnpress = () => {
+        let width = containerRef1?.current?.clientWidth;
+        containerRef1.current.scrollLeft = containerRef1?.current?.scrollLeft - width;
         
         }
 
     const nextbtnpress = () =>{
-        let width = box.clientWidth;
-        box.scrollLeft = box.scrollLeft + width;
+        let width = containerRef1?.current?.clientWidth;
+        containerRef1.current.scrollLeft = containerRef1?.current?.scrollLeft + width;
     }
 
     let box1 = document.querySelector(".productContainer1");
@@ -153,9 +155,9 @@ const PCacMen = () => {
     ]
 
 
-    const menS1 = menAc1.map((item) => {
+    const menS1 = menAc1.map((item, i) => {
         return <ProductCard 
-        image= {item.image} prize= {item.prize} name= {item.name} />
+        key={i} image= {item.image} prize= {item.prize} name= {item.name} />
     }) 
    
 
@@ -166,7 +168,7 @@ const PCacMen = () => {
             <button className="pre-btn" onClick={prevbtnpress}><p>&lt;</p></button>
             <button className="next-btn" onClick={nextbtnpress}><p>&gt;</p></button>
             
-            <div className="productContainer">
+            <div ref={containerRef1} className="productContainer">
                 {menS1}
             </div>
 

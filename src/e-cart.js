@@ -15,16 +15,15 @@ import Furniture from "./interiorDesign/Furniture";
 import DecorThings from "./interiorDesign/DecorThings";
 import WishList from "./wishList/WishList";
 import { About } from "./ac/About";
-
-
+import ProductDetails from "./components/ProductDetails";
 
 export function Ecart() {
   return (
     <Provider store={store}>
       <Router>
-           <Routes>
+        <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/home" element={<Home/>} />
+          <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/atformen" element={<AtForMen />} />
@@ -37,10 +36,9 @@ export function Ecart() {
           <Route path="/decorthings" element={<DecorThings />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/wishlist" element={<WishList />} />
-          
-          </Routes>
+          <Route path="/productdetails" element={<ProductDetails />} />
+        </Routes>
       </Router>
-      
     </Provider>
   );
 }

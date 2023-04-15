@@ -39,7 +39,7 @@ const NavBar2 = () => {
                 <Searchbar data= {searchData} placeholder= "search" />
             </div>
 
-            <div className="wishlist">
+            <div className="wishlist-icon">
                 <div className="icon" 
                 onClick={() => navigate("/wishlist")}>{<FavoriteIcon />}
                 </div>

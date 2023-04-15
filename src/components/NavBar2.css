@@ -43,7 +43,7 @@
     justify-content: start;
     align-items: center;
 }
-.wishlist{
+.wishlist-icon{
     flex: 1;
     margin-left: 7px;
     width: fit-content;
